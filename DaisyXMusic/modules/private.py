@@ -35,7 +35,7 @@ def _start(client, message):
                     InlineKeyboardButton(
                         "📲 Updates", url=f"https://t.me/{UPDATES_CHANNEL}"), 
                     InlineKeyboardButton(
-                        "💬 Support", url=f"https://t.me/{SUPPORT_GROUP}")
+                        "💬 Group", url=f"https://t.me/{SUPPORT_GROUP}")
                 ],[
                     InlineKeyboardButton(
                         "🧑‍💻 My Owner", url=f"https://t.me/RosoOwner_bot")
@@ -53,7 +53,7 @@ async def gstart(_, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "💬 Support Chat", url=f"https://t.me/{SUPPORT_GROUP}"
+                        "📲 Updates", url=f"https://t.me/{UPDATES_CHANNEL}"
                     )
                 ]
             ]
@@ -95,7 +95,7 @@ def map(pos):
         button = [
             [InlineKeyboardButton("🍺 Add Roso to your Group", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")],
             [InlineKeyboardButton(text = '📲 Updates', url=f"https://t.me/{UPDATES_CHANNEL}"),
-             InlineKeyboardButton(text = '💬 Support', url=f"https://t.me/{SUPPORT_GROUP}")],
+             InlineKeyboardButton(text = '💬 Group', url=f"https://t.me/{SUPPORT_GROUP}")],
             [InlineKeyboardButton(text = '🧑‍💻 My Owner', url=f"https://t.me/RosoOwner_bot")],
             [InlineKeyboardButton(text = '◀️', callback_data = f"help+{pos-1}")]
         ]
