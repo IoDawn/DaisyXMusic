@@ -17,14 +17,11 @@
 import os
 from DaisyXMusic.config import SOURCE_CODE,ASSISTANT_NAME,PROJECT_NAME,SUPPORT_GROUP,UPDATES_CHANNEL
 class Messages():
-      START_MSG = "**Haloo.. [{}](tg://user?id={})!**\n\nSaya dapat memutar musik untuk obrolan Grup dan Chanel Anda.
-Silahkan tekan /help untuk melihat apa saja yang dapat saya lakukan.
-
-`-note: jangan lupa Support saya dibawah ini untuk menambahkan energi saya`."
+      START_MSG = "**Haloo.. [{}](tg://user?id={})!**\n\nSaya dapat memutar musik untuk obrolan Grup dan Chanel Anda.Silahkan tekan /help untuk melihat apa saja yang dapat saya lakukan.\n\n`-note: jangan lupa Support saya dibawah ini untuk menambahkan energi saya`."
       HELP_MSG = [
         ".",
 f"""
-**Hey 👋 Welcome back to {PROJECT_NAME}
+**Haloo 👋 Selamat datang kembali di {PROJECT_NAME}
 
 ⚪️ {PROJECT_NAME} can play music in your group's voice chat as well as channel voice chats
 
