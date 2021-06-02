@@ -23,21 +23,21 @@ class Messages():
 f"""
 **Haloo 👋 Selamat datang kembali di {PROJECT_NAME}
 
-⚪️ {PROJECT_NAME} can play music in your group's voice chat as well as channel voice chats
+🍺**Roso-Music dapat memutar musik di obrolan suara grup Anda serta obrolan suara Channel**
 
-⚪️ Assistant name >> @{ASSISTANT_NAME}\n\nClick next for instructions**
+🤖**Nama asisten ⊵** @RosoAssistant\n\n`klik tombol dibawah untuk melihat instruksi selanjutnya`
 """,
 
 f"""
 **Help's and Commands Roso-Music**
 
-**Untuk Memutar Musik di Grup💬**
+**Untuk Memutar Musik di Grup💬**:
 1) Jadikan bot sebagai admin Grup dan diChanel jika menggunakan cmd /cplay
 2) Mulai obrolan suara
 3) Coba /play [nama lagu] pertama kali lakukanlah oleh admin
 `*Jika Roso-Music♬ bergabung selamat nikmati musik, Jika tidak tambahkan` @RosoAssistant `ke grup Anda dan coba lagi`
 
-**Untuk Memutar Musik diChanel:**
+**Untuk Memutar Musik diChanel🔊**:
 1) Jadikan bot sebagai admin  Chanel Anda
 2) Kirim perintah /userbotjoinchannel di grup tertaut
 3) Sekarang kirim cmd di grup tertaut(cth: /play [lagu])
@@ -68,45 +68,38 @@ f"""
 """,
         
 f"""
-**=>> Channel Music Play 🛠**
+**⊵ Untuk memutar Musik di Chanel 🔊**
 
-⚪️ For linked group admins only:
+👤**Cmd khusus untuk admin grup tertaut:**
 
-- /cplay [song name] - play song you requested
-- /cdplay [song name] - play song you requested via deezer
-- /csplay [song name] - play song you requested via jio saavn
-- /cplaylist - Show now playing list
-- /cccurrent - Show now playing
-- /cplayer - open music player settings panel
-- /cpause - pause song play
-- /cresume - resume song play
-- /cskip - play next song
-- /cend - stop music play
-- /userbotjoinchannel - invite assistant to your chat
+- /cplay [nama lagu] : putar lagu yang Anda minta
+- /cdplay [nama lagu] : putar lagu yang Anda minta melalui deezer
+- /csplay [nama lagu] : putar lagu yang Anda minta melalui jio saavn
+- /cplaylist : Tampilkan daftar yang sedang diputar
+- /cccurrent : Tampilkan sekarang diputar
+- /cplayer : buka panel pengaturan pemutar musik
+- /cpause : jeda pemutaran lagu
+- /cresume : melanjutkan pemutaran lagu
+- /cskip : putar lagu berikutnya
+- /cend : hentikan pemutaran musik
+- /userbotjoinchannel : undang asisten ke obrolan Anda
 
-channel is also can be used instead of c ( /cplay = /channelplay )
+`channel juga bisa digunakan sebagai pengganti` /cplay = /channelplay
 
-⚪️ If you donlt like to play in linked group:
+🔉**Jika Anda tidak suka memutar musik di grup tertaut:**
 
-1) Get your channel ID.
-2) Create a group with tittle: Channel Music: your_channel_id
-3) Add bot as Channel admin with full perms
-4) Add @{ASSISTANT_NAME} to the channel as an admin.
-5) Simply send commands in your group.
+1) Dapatkan ID Chanel Anda.
+2) Buat grup dengan judul: Channel Music:(id_chanel_anda)
+3) Tambahkan bot sebagai admin Chanel dengan izin penuh
+4) Tambahkan @RosoAssistant ke chanel sebagai admin.
+5) Cukup kirim perintah di grup Anda.
 """,
 
 f"""
-**=>> More tools 🧑‍🔧**
+**⊵  Pengaturan tambahan📍**
 
-- /admincache: Updates admin info of your group. Try if bot isn't recognize admin
-- /userbotjoin: Invite @{ASSISTANT_NAME} Userbot to your chat
-
-**=>> Commands for Sudo Users ⚔️**
-
- - /userbotleaveall - remove assistant from all chats
- - /gcast <reply to message> - globally brodcast replied message to all chats
- - /pmpermit [on/off] - enable/disable pmpermit message
-*Sudo Users can execute any command in any groups
+- /admincache: Memperbarui info admin grup Anda. Coba jika bot tidak mengenali admin
+- /userbotjoin: Undang @RosoAssistant Userbot ke dalam obrolan Anda
 
 """
       ]
