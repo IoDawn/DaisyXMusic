@@ -59,7 +59,7 @@ f"""
 - /pause: Jeda trek lagu
 - /resume: Melanjutkan trek lagu yang dijeda
 - /end: Menghentikan pemutaran musik
-- /saat ini: Menampilkan trek lagu yang sedang diputar
+- /current: Menampilkan trek lagu yang sedang diputar
 - /playlist: Menampilkan daftar putar
 
 `*Cmd Player dan semua cmd lainnya kecuali` /play, /current dan /playlist `hanya untuk admin grup.`
