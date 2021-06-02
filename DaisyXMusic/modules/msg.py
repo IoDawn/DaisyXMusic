@@ -29,39 +29,42 @@ f"""
 """,
 
 f"""
-**Setting up**
+**Help's and Commands Roso-Music**
 
-1) Make bot admin (Group and in channel if use cplay)
-2) Start a voice chat
-3) Try /play [song name] for the first time by an admin
-*) If userbot joined enjoy music, If not add @{ASSISTANT_NAME} to your group and retry
+**Untuk Memutar Musik di Grup💬**
+1) Jadikan bot sebagai admin Grup dan diChanel jika menggunakan cmd /cplay
+2) Mulai obrolan suara
+3) Coba /play [nama lagu] pertama kali lakukanlah oleh admin
+`*Jika Roso-Music♬ bergabung selamat nikmati musik, Jika tidak tambahkan` @RosoAssistant `ke grup Anda dan coba lagi`
 
-**For Channel Music Play**
-1) Make me admin of your channel 
-2) Send /userbotjoinchannel in linked group
-3) Now send commands in linked group
+**Untuk Memutar Musik diChanel:**
+1) Jadikan bot sebagai admin  Chanel Anda
+2) Kirim perintah /userbotjoinchannel di grup tertaut
+3) Sekarang kirim cmd di grup tertaut(cth: /play [lagu])
 
-**Commands**
+**Commands/Perintah** 
 
-**=>> Song Playing 🎧**
+ **♬ Memutar Lagu 🎧**
 
-- /play: Play song using youtube music
-- /play [yt url] : Play the given yt url
-- /play [reply yo audio]: Play replied audio
-- /dplay: Play song via deezer
-- /splay: Play song via jio saavn
+- /play [nama lagu]: Putar lagu menggunakan musik youtube
+- /play [yt url/link]: Memutar lagu melalui url youtube yang diberikan
+- /play [reply audio]: Memutar audio/lagu yang dibalas
+- /dplay: Memutar lagu melalui deezer
+- /splay: Putar lagu melalui jio saavn
 
-**=>> Playback ⏯**
+**♬ Pemutaran ⏯**
 
-- /player: Open Settings menu of player
-- /skip: Skips the current track
-- /pause: Pause track
-- /resume: Resumes the paused track
-- /end: Stops media playback
-- /current: Shows the current Playing track
-- /playlist: Shows playlist
+- /player: Buka menu Pengaturan player
+- /skip: Melewati trek lagu saat ini
+- /pause: Jeda trek lagu
+- /resume: Melanjutkan trek lagu yang dijeda
+- /end: Menghentikan pemutaran musik
+- /saat ini: Menampilkan trek lagu yang sedang diputar
+- /playlist: Menampilkan daftar putar
 
-*Player cmd and all other cmds except /play, /current  and /playlist  are only for admins of the group.
+`*Cmd Player dan semua cmd lainnya kecuali` /play, /current dan /playlist `hanya untuk admin grup.`
+
+`(cmd=command/perintah)`
 """,
         
 f"""
