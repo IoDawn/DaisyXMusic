@@ -631,7 +631,7 @@ async def play(_, message: Message):
         await message.reply_photo(
             photo="final.png",
             reply_markup=keyboard,
-            caption="▶️ **Playing** here the song requested by {} via Youtube Music 😜".format(
+            caption="▶️ **Memutar** lagu ini permintaan dari {} via Musik YouTube 💽".format(
                 message.from_user.mention()
             ),
         )
@@ -642,7 +642,7 @@ async def play(_, message: Message):
 @Client.on_message(filters.command("dplay") & filters.group & ~filters.edited)
 async def deezer(client: Client, message_: Message):
     global que
-    lel = await message_.reply("🔄 **Processing**")
+    lel = await message_.reply("🔄 **Memproses**")
     administrators = await get_administrators(message_.chat)
     chid = message_.chat.id
     try:
@@ -673,10 +673,10 @@ async def deezer(client: Client, message_: Message):
                 try:
                     await USER.join_chat(invitelink)
                     await USER.send_message(
-                        message_.chat.id, "I joined this group for playing music in VC"
+                        message_.chat.id, "Saya bergabung ke grup ini untuk memutar musik di VC"
                     )
                     await lel.edit(
-                        "<b>helper userbot joined your chat</b>",
+                        "<b>asisten Roso bergabung dengan obrolan Anda</b>",
                     )
 
                 except UserAlreadyParticipant:
@@ -801,10 +801,10 @@ async def jiosaavn(client: Client, message_: Message):
                 try:
                     await USER.join_chat(invitelink)
                     await USER.send_message(
-                        message_.chat.id, "I joined this group for playing music in VC"
+                        message_.chat.id, "Saya bergabung dengan grup ini untuk memutar musik di VC"
                     )
                     await lel.edit(
-                        "<b>helper userbot joined your chat</b>",
+                        "<b>asisten Roso bergabung dengan obrolan Anda</b>",
                     )
 
                 except UserAlreadyParticipant:
@@ -812,15 +812,15 @@ async def jiosaavn(client: Client, message_: Message):
                 except Exception:
                     # print(e)
                     await lel.edit(
-                        f"<b>🔴 Flood Wait Error 🔴 \nUser {user.first_name} couldn't join your group due to heavy requests for userbot! Make sure user is not banned in group."
-                        "\n\nOr manually add @DaisyXmusic to your Group and try again</b>",
+                        f"<b>🔴 Flood Wait Error 🔴 \nUser {user.first_name} tidak dapat bergabung dengan grup Anda karena banyaknya permintaan untuk asisten bot! Pastikan pengguna tidak diban dari grup."
+                        "\n\natau tambahkan secara manual @RosoAssistant ke grup anda dan coba lagi</b>",
                     )
     try:
         await USER.get_chat(chid)
         # lmoa = await client.get_chat_member(chid,wew)
     except:
         await lel.edit(
-            "<i> helper Userbot not in this chat, Ask admin to send /play command for first time or add assistant manually</i>"
+            "<i> asisten Roso tidak ada dalam obrolan ini, katakan admin untuk mengirim perintah /play untuk pertama kalinya atau tambahkan asisten Roso secara manual</i>"
         )
         return
     requested_by = message_.from_user.first_name
