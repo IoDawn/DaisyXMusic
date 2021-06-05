@@ -319,11 +319,11 @@ async def m_cb(b, cb):
         if temp:
             msg += "\n\n"
             msg += "**Queue**"
-            for the next song:
+            for song in temp:
                 name = song[0]
                 usr = song[1].mention(style="md")
                 msg += f"\n- {name}"
-                msg += f"\n- Permintaan oleh {usr}\n"
+                msg += f"\n- Req by {usr}\n"
         await cb.message.edit(msg)
 
     elif type_ == "resume":
