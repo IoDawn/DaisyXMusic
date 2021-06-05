@@ -143,7 +143,7 @@ async def playlist(client, message):
         temp.append(t)
     now_playing = temp[0][0]
     by = temp[0][1].mention(style="md")
-    msg = "**Now Playing** in {}".format(message.chat.title)
+    msg = "**Sedang diPutar di {}**".format(message.chat.title)
     msg += "\n- " + now_playing
     msg += "\n- Req by " + by
     temp.pop(0)
@@ -244,9 +244,9 @@ async def p_cb(b, cb):
             temp.append(t)
         now_playing = temp[0][0]
         by = temp[0][1].mention(style="md")
-        msg = "**Sedang dimainkan** di {}".format(cb.message.chat.title)
+        msg = "**Sedang diPutar di {}**".format(cb.message.chat.title)
         msg += "\n- " + now_playing
-        msg += "\n- Permintaan dari " + by
+        msg += "\n- Req oleh " + by
         temp.pop(0)
         if temp:
             msg += "\n\n"
@@ -286,7 +286,7 @@ async def m_cb(b, cb):
         else:
             callsmusic.pytgcalls.pause_stream(chet_id)
 
-            await cb.answer("Music Paused!")
+            await cb.answer("Musik di Jeda!")
             await cb.message.edit(
                 updated_stats(m_chat, qeue), reply_markup=r_ply("play")
             )
@@ -312,9 +312,9 @@ async def m_cb(b, cb):
             temp.append(t)
         now_playing = temp[0][0]
         by = temp[0][1].mention(style="md")
-        msg = "**Sedang dimainkan** di {}".format(cb.message.chat.title)
+        msg = "**Sedang diPutar di {}**".format(cb.message.chat.title)
         msg += "\n- " + now_playing
-        msg += "\n- Permintaan dari " + by
+        msg += "\n- Req oleh " + by
         temp.pop(0)
         if temp:
             msg += "\n\n"
@@ -333,7 +333,7 @@ async def m_cb(b, cb):
             await cb.answer("Chat is not connected or already playng", show_alert=True)
         else:
             callsmusic.pytgcalls.resume_stream(chet_id)
-            await cb.answer("Music Resumed!")
+            await cb.answer("Musik dilanjutkan!")
     elif type_ == "puse":
         if (chet_id not in callsmusic.pytgcalls.active_calls) or (
             callsmusic.pytgcalls.active_calls[chet_id] == "paused"
@@ -403,7 +403,7 @@ async def m_cb(b, cb):
 @Client.on_message(command("play") & other_filters)
 async def play(_, message: Message):
     global que
-    lel = await message.reply("🔄 **Memproses**")
+    lel = await message.reply("🔄 **Diproses**")
     administrators = await get_administrators(message.chat)
     chid = message.chat.id
 
@@ -609,7 +609,7 @@ async def play(_, message: Message):
         qeue.append(appendable)
         await message.reply_photo(
             photo="final.png",
-            caption=f"#⃣ Lagu yang Anda minta **queued** ada di antrian {position}!",
+            caption=f"#⃣ Lagu yang Anda minta dalam **Antrian** {position}!",
             reply_markup=keyboard,
         )
         os.remove("final.png")
