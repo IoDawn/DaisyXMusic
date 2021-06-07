@@ -17,11 +17,11 @@
 import os
 from DaisyXMusic.config import SOURCE_CODE,ASSISTANT_NAME,PROJECT_NAME,SUPPORT_GROUP,UPDATES_CHANNEL
 class Messages():
-      START_MSG = "**Haloo.. [{}](tg://user?id={})!**\n\nSaya dapat memutar musik untuk obrolan Grup dan Chanel Anda.Silahkan tekan /help untuk melihat apa saja yang dapat saya lakukan.\n\n`-note: jangan lupa Support saya dibawah ini untuk menambahkan energi saya`."
+      START_MSG = "**Haloo.. [{}](tg://user?id={})!**\n\nSaya dapat memutar musik untuk obrolan Grup dan Chanel Anda.Silahkan tekan Tutor dibawah untuk melihat apa saja yang dapat saya lakukan.\n\n`-note: jangan lupa Support saya dibawah ini untuk menambahkan energi saya`."
       HELP_MSG = [
         ".",
 f"""
-**Haloo 👋 Selamat datang kembali di {PROJECT_NAME}
+**Haloo..Selamat datang kembali di {PROJECT_NAME}
 
 🍺**Roso-Music dapat memutar musik di obrolan suara grup Anda serta obrolan suara Channel**
 
@@ -31,16 +31,16 @@ f"""
 f"""
 **Help's and Commands Roso-Music**
 
-**Untuk Memutar Musik di Grup💬**:
+**Untuk Memutar Musik di Grup 💬**:
 1) Jadikan bot sebagai admin Grup dan diChanel jika menggunakan cmd /cplay
 2) Mulai obrolan suara
 3) Coba /play [nama lagu] pertama kali lakukanlah oleh admin
 `*Jika Roso-Music♬ bergabung selamat nikmati musik, Jika tidak tambahkan` @RosoAssistant `ke grup Anda dan coba lagi`
 
-**Untuk Memutar Musik diChanel🔊**:
+**Untuk Memutar Musik diChanel 🔊**:
 1) Jadikan bot sebagai admin  Chanel Anda
 2) Kirim perintah /userbotjoinchannel di grup tertaut
-3) Sekarang kirim cmd di grup tertaut(cth: /play [lagu])
+3) Sekarang kirim cmd di grup tertaut(cth: /cplay [lagu])
 
 **Commands/Perintah** 
 
