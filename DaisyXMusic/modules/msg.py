@@ -17,19 +17,19 @@
 import os
 from DaisyXMusic.config import SOURCE_CODE,ASSISTANT_NAME,PROJECT_NAME,SUPPORT_GROUP,UPDATES_CHANNEL
 class Messages():
-      START_MSG = "**Haloo.. [{}](tg://user?id={})!**\n\nSaya dapat memutar musik untuk obrolan Grup dan Chanel Anda. Silahkan tekan Tutor dibawah untuk melihat apa saja yang dapat saya lakukan.\n\n`-note: jangan lupa Support saya dibawah ini untuk menambahkan energi saya`."
+      START_MSG = "**Haloo.. [{}](tg://user?id={})!**\n\nSaya dapat memutar musik untuk obrolan Grup dan Chanel Anda. Silahkan tekan /help untuk melihat apa saja yang dapat saya lakukan.\n\n`-note: Tekan update dibawah ini untuk melihat informasi seputar bot`."
       HELP_MSG = [
         ".",
 f"""
 **Haloo..Selamat datang kembali di {PROJECT_NAME}
 
-🍺**Roso-Music dapat memutar musik di obrolan suara grup Anda serta obrolan suara Channel**
+🍺Roso-Music dapat memutar musik di obrolan suara grup Anda serta obrolan suara Channel
 
-🤖**Nama asisten ⊵** @RosoAssistant\n\n`klik tombol dibawah untuk melihat instruksi selanjutnya`
+🤖Nama asisten ⊵ @RosoAssistant**\n\n`klik tombol dibawah untuk melihat instruksi selanjutnya`
 """,
 
 f"""
-**Help's and Commands Roso-Music**
+**Help's and Commands Roso-Music** 
 
 **Untuk Memutar Musik di Grup 💬**:
 1) Jadikan bot sebagai admin Grup dan diChanel jika menggunakan cmd /cplay
@@ -45,7 +45,6 @@ f"""
 **Commands/Perintah** 
 
  **♬ Memutar Lagu 🎧**
-
 - /play [nama lagu]: Putar lagu menggunakan musik youtube
 - /play [yt url/link]: Memutar lagu melalui url youtube yang diberikan
 - /play [reply audio]: Memutar audio/lagu yang dibalas
@@ -53,7 +52,6 @@ f"""
 - /splay: Putar lagu melalui jio saavn
 
 **♬ Pemutaran ⏯**
-
 - /player: Buka menu Pengaturan player
 - /skip: Melewati trek lagu saat ini
 - /pause: Jeda trek lagu
@@ -70,8 +68,7 @@ f"""
 f"""
 **⊵ Untuk memutar Musik di Chanel 🔊**
 
-👤**Cmd khusus untuk admin grup tertaut:**
-
+🧑‍✈️**Cmd khusus untuk admin grup tertaut:**
 - /cplay [nama lagu] : putar lagu yang Anda minta
 - /cdplay [nama lagu] : putar lagu yang Anda minta melalui deezer
 - /csplay [nama lagu] : putar lagu yang Anda minta melalui jio saavn
@@ -87,7 +84,6 @@ f"""
 `channel juga bisa digunakan sebagai pengganti` /cplay = /channelplay
 
 🔉**Jika Anda tidak suka memutar musik di grup tertaut:**
-
 1) Dapatkan ID Chanel Anda.
 2) Buat grup dengan judul: Channel Music:(id_chanel_anda)
 3) Tambahkan bot sebagai admin Chanel dengan izin penuh
