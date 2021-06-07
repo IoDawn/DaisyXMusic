@@ -15,6 +15,7 @@
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 import logging
+from telegram.ext.dispatcher import DispatcherHandlerStop
 from DaisyXMusic.modules.msg import Messages as tr
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, Message
@@ -38,7 +39,7 @@ def _start(client, message):
                         "🧑🏻‍💻 Owner", url=f"https://t.me/{SUPPORT_GROUP}")
                 ],[
                     InlineKeyboardButton(
-                        "Tutor penggunaan 📍", url=f"t.me/{BOT_USERNAME}?start=help")
+                        "Tutor penggunaan 📍", url=f"t.me/{dispatcher.bot.username}?start=help")
                 ]
             ]
         ),
@@ -48,12 +49,12 @@ def _start(client, message):
 @Client.on_message(filters.command("start") & ~filters.private & ~filters.channel)
 async def gstart(_, message: Message):
     await message.reply_text(
-        f"""**🔴 {PROJECT_NAME} is online**""",
+        f"""**✅{PROJECT_NAME} sedang Aktif**""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "Tutor📍", url=f"t.me/{BOT_USERNAME}?start=help"
+                        "Update 📲", url=f"https://t.me/arunasupportbot"
                     )
                 ]
             ]
