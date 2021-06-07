@@ -15,7 +15,6 @@
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 import logging
-from telegram.ext.dispatcher import DispatcherHandlerStop
 from DaisyXMusic.modules.msg import Messages as tr
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, Message
@@ -31,15 +30,12 @@ def _start(client, message):
             [
                 [
                     InlineKeyboardButton(
-                        "Tambahkan Roso ke Grup 🍺", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")],
+                        "➕ Tambahkan Roso ke Grup ➕", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")],
                 [
                     InlineKeyboardButton(
-                        "📲 Support", url=f"https://t.me/{UPDATES_CHANNEL}"), 
+                        "📲 Update", url=f"https://t.me/{UPDATES_CHANNEL}"), 
                     InlineKeyboardButton(
-                        "🧑🏻‍💻 Owner", url=f"https://t.me/{SUPPORT_GROUP}")
-                ],[
-                    InlineKeyboardButton(
-                        "Tutor penggunaan 📍", url=f"t.me/{dispatcher.bot.username}?start=help")
+                        "👤 Owner", url=f"https://t.me/{SUPPORT_GROUP}")
                 ]
             ]
         ),
@@ -94,7 +90,7 @@ def map(pos):
     elif(pos==len(tr.HELP_MSG)-1):
         url = f"https://t.me/{SUPPORT_GROUP}"
         button = [
-            [InlineKeyboardButton("Tambahkan Roso ke Grup ➕", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")],
+            [InlineKeyboardButton("➕ Tambahkan Roso ke Grup ➕", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")],
             [InlineKeyboardButton(text = '◀️', callback_data = f"help+{pos-1}")]
         ]
     else:
@@ -114,7 +110,7 @@ async def ghelp(_, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "🟡 Klik di sini untuk bantuan 🟡", url=f"t.me/{dispatcher.bot.username}?start=help"
+                        "📍 Klik di sini untuk bantuan 📍", url=f"t.me/{BOT_USERNAME}?start=help"
                     )
                 ]
             ]
