@@ -30,15 +30,15 @@ def _start(client, message):
             [
                 [
                     InlineKeyboardButton(
-                        "🍺 Add Roso to your Group", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")],
+                        "Tambahkan Roso ke Grup 🍺", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")],
                 [
                     InlineKeyboardButton(
-                        "📲 Updates", url=f"https://t.me/{UPDATES_CHANNEL}"), 
+                        "📲 Support", url=f"https://t.me/{UPDATES_CHANNEL}"), 
                     InlineKeyboardButton(
-                        "💬 Group", url=f"https://t.me/{SUPPORT_GROUP}")
+                        "🧑🏻‍💻 Owner", url=f"https://t.me/{SUPPORT_GROUP}")
                 ],[
                     InlineKeyboardButton(
-                        "🧑‍💻 My Owner", url=f"https://t.me/RosoOwner_bot")
+                        "Tutor penggunaan 📍", url=f"t.me/{BOT_USERNAME}?start=help")
                 ]
             ]
         ),
@@ -53,7 +53,7 @@ async def gstart(_, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "📲 Updates", url=f"https://t.me/{UPDATES_CHANNEL}"
+                        "Tutor📍", url=f"t.me/{BOT_USERNAME}?start=help"
                     )
                 ]
             ]
@@ -111,12 +111,12 @@ def map(pos):
 @Client.on_message(filters.command("help") & ~filters.private & ~filters.channel)
 async def ghelp(_, message: Message):
     await message.reply_text(
-        f"""**🙋‍♀️ Hello there! I can play music in the voice chats of telegram groups & channels.**""",
+        f"""**🙋‍♀️ Halo yang disana! Saya dapat memutar musik di obrolan suara grup dan chanel telegram.**""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "🟡 Click here for help 🟡", url=f"https://t.me/{BOT_USERNAME}?start"
+                        "🟡 Klik di sini untuk bantuan 🟡", url=f"https://t.me/{BOT_USERNAME}?start"
                     )
                 ]
             ]
