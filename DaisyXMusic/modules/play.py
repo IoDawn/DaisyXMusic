@@ -250,7 +250,7 @@ async def p_cb(b, cb):
         temp.pop(0)
         if temp:
             msg += "\n\n"
-            msg += "**Queue**"
+            msg += "**Antrian**"
             for song in temp:
                 name = song[0]
                 usr = song[1].mention(style="md")
@@ -318,7 +318,7 @@ async def m_cb(b, cb):
         temp.pop(0)
         if temp:
             msg += "\n\n"
-            msg += "**Queue**"
+            msg += "**Antrian**"
             for song in temp:
                 name = song[0]
                 usr = song[1].mention(style="md")
